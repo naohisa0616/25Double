@@ -45,6 +45,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
 //        テキストフィールドを更新する（テキストの編集が確定）
         return true
     }
+    
+//    クリアボタンで実行されるデリゲートメソッド
+    func textFieldShouldClear(_ textField: UITextField) -> Bool {
+        myLabel.text = "0"
+        return true
+    }
 
 
 }
